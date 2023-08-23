@@ -55,9 +55,9 @@ We developed a medical segmentation model to predict pixel-wise tissue type on h
 
 ### Stroke Patients - Wearable sensors and Video
 
-![image](https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.pdf)
+![image](https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png)
 
-![image](https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Video.pdf)
+![image](https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Video.png)
 
 An independent assessment performed in-clinic by trained experts was shown to be strongly correlated with the COBRA score for two different data modalities:  wearable sensors (&pho = 0.845, 95% CI [0.743,0.908]) and video (ρ = 0.746, 95% C.I [0.594, 0.847])
 
