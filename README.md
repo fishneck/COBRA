@@ -5,8 +5,8 @@ Automatic assessment of impairment and disease severity is a key challenge in da
 
 ## COnfidence-Based chaRacterization of Anomalies (COBRA) Framework
 
-<img src="https://github.com/fishneck/COBRA/COBRA-Overview-KneeOA.png" alt="GitHub" title="GitHub,Social Coding" width="50" height="50" />
-https://github.com/fishneck/COBRA/
+![image](https://github.com/fishneck/COBRA/blob/main/COBRA-Overview-KneeOA.png)
+
 In Step 1, an AI model is trained to perform a clinically meaningful task on data from healthy individuals. For impairment quantification in stroke patients, the task is prediction of functional primitive motions from videos or wearable sensor data (top). For severity quantification of knee osteoarthritis, the task is segmentation of knee tissues from magnetic resonance imaging scans (bottom). In Step 2, the COBRA score is computed based on the confidence of the AI model when performing the task on patient data. Data from patients with higher degrees of impairment or severity differ more from the healthy population used for training, which results in decreased model confidence and hence a lower COBRA score.
 
 
