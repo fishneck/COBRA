@@ -11,11 +11,17 @@ HC_data_dir = # Your data directory to healthy subjects' data
 HAR_data_dir = # Your data directory to impaired subjects' data
 #'./kinematic_data/HAR-data-processed-2/'
 
-os.makedirs('./dataset/sensors_all') # healthy subjects
+hc_dir = 'sensors_all' # healthy subjects
+har_dir = 'sensors'# impaired(at risk) subjects
+
+for d in ['csv','result','dataset','result']:
+    os.makedirs(os.path.join(d, hc_dir))
+    os.makedirs(os.path.join(d, har_dir))
+
+
 os.makedirs('./dataset/sensors_all/groundTruth')
 os.makedirs('./dataset/sensors_all/features')
 
-os.makedirs('./dataset/sensors') # impaired subjects
 os.makedirs('./dataset/sensors/groundTruth')
 os.makedirs('./dataset/sensors/features')
 
