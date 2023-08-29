@@ -28,7 +28,7 @@ The impairment level of each patient was quantified via the Fugl-Meyer assessmen
 
 The application of the COBRA score to the quantification of knee osteoarthritis (OA) severity was carried out using the publicly available OAI-ZIB dataset. This dataset provides 3D MRI scans of 101 healthy right knees and 378 right knees affected by knee osteoarthritis (OA), a long-term degenerative joint condition.
 
-![image](https://github.com/fishneck/COBRA/blob/main/Data-KneeOA.png)
+![image](./figs/Data-KneeOA.png)
 
 
 Each knee is labeled with the corresponding Kellgren-Lawrence (KL) grades, retrieved from the NIH Osteoarthritis Initiative collection. The KL grade quantifies OA severity on a scale from 0 (healthy) to 4 (severe).
@@ -59,15 +59,15 @@ We developed a medical segmentation model to predict pixel-wise tissue type on h
 
 ### Stroke Patients - Wearable sensors and Video
 
-![image](https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png)
+![image](./figs/Result-Stroke-Sensor.png)
 
-![image](https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Video.png)
+![image](./figs/Result-Stroke-Video.png)
 
 An independent assessment performed in-clinic by trained experts was shown to be strongly correlated with the COBRA score for two different data modalities:  wearable sensors (ρ = 0.845, 95% CI [0.743,0.908]) and video (ρ = 0.746, 95% C.I [0.594, 0.847])
 
 ### Knee Osteoarthritis 
 
-![image](https://github.com/fishneck/COBRA/blob/main/Result-KneeOA.png)
+![image](./figs/Result-KneeOA.png)
 
 In addition, the COBRA score was applied to quantify severity of knee osteoarthritis from magneticresonance imaging scans, again achieving significant correlation with an
 independent clinical assessment (ρ = 0.658, 95% C.I [0.581,0.734]).
