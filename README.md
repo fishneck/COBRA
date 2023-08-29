@@ -1,5 +1,5 @@
 
-This website contains instructions, code, and results for Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects
+This website contains instructions, codes, and results for **Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects**
 
 For more information please visit our website https://fishneck.github.io/COBRA/
 
