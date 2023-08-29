@@ -54,6 +54,7 @@ We developed a medical segmentation model to predict pixel-wise tissue type on h
 ## Automatic assessment result
 
 ### Stroke Patients - Wearable sensors and Video
+<img src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png" data-canonical-src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png" width="200" height="400" />
 
 ![image](https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png)
 
