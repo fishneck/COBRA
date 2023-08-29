@@ -72,3 +72,7 @@ An independent assessment performed in-clinic by trained experts was shown to be
 
 In addition, the COBRA score was applied to quantify severity of knee osteoarthritis from magneticresonance imaging scans, again achieving significant correlation with an
 independent clinical assessment (ρ = 0.658, 95% C.I [0.581,0.734]).
+
+# Code
+
+Please visit [our GitHub page](https://github.com/fishneck/COBRA/) for data, pre-trained models, code, and instructions on how to use the code.
