@@ -55,11 +55,11 @@ We developed a medical segmentation model to predict pixel-wise tissue type on h
 
 ### Stroke Patients - Wearable sensors and Video
 
-Wearable sensors - ρ = 0.845, 95% CI [0.743,0.908]
+Wearable sensors : ρ = 0.845, 95% CI [0.743,0.908]
 
 <img src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png" data-canonical-src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png" width="300" height="300" />
 
-Video - ρ = 0.746, 95% C.I [0.594, 0.847]
+Video : ρ = 0.746, 95% C.I [0.594, 0.847]
 
 <img src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Video.png" data-canonical-src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Video.png" width="300" height="300" />
 
