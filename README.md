@@ -1,3 +1,10 @@
+
+This website contains instructions, codes, and results for **Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects**
+
+For more information please visit our website https://fishneck.github.io/COBRA/
+
+
+
 # Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects
 
 Automatic assessment of impairment and disease severity is a key challenge in data-driven medicine. We propose a novel framework to address this challenge, which leverages AI models trained exclusively on healthy subjects. The models are designed to predict a clinically-meaningful attribute of the healthy patients. When presented with data where the attribute is affected by the medical condition of interest, the models experience a decrease in confidence that can be used to quantify deviation from the healthy population. The resulting **COnfidence-Based chaRacterization of Anomalies (COBRA)** score was applied to quantification of upper-body motion impairment in stroke patients, and severity of knee osteoarthritis from magneticresonance imaging scans.
@@ -55,11 +62,15 @@ We developed a medical segmentation model to predict pixel-wise tissue type on h
 
 ### Stroke Patients - Wearable sensors and Video
 
-![image](https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png)
+Wearable sensors : ρ = 0.845, 95% CI [0.743,0.908]
 
-![image](https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Video.png)
+<img src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png" data-canonical-src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Sensor.png" width="300" height="300" />
 
-An independent assessment performed in-clinic by trained experts was shown to be strongly correlated with the COBRA score for two different data modalities:  wearable sensors (ρ = 0.845, 95% CI [0.743,0.908]) and video (ρ = 0.746, 95% C.I [0.594, 0.847])
+Video : ρ = 0.746, 95% C.I [0.594, 0.847]
+
+<img src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Video.png" data-canonical-src="https://github.com/fishneck/COBRA/blob/main/Result-Stroke-Video.png" width="300" height="300" />
+
+An independent assessment performed in-clinic by trained experts was shown to be strongly correlated with the COBRA score for both data modalities
 
 ### Knee Osteoarthritis 
 
@@ -67,3 +78,8 @@ An independent assessment performed in-clinic by trained experts was shown to be
 
 In addition, the COBRA score was applied to quantify severity of knee osteoarthritis from magneticresonance imaging scans, again achieving significant correlation with an
 independent clinical assessment (ρ = 0.658, 95% C.I [0.581,0.734]).
+
+
+# Pre-Trained Models and Code
+
+Please visit [our GitHub page](https://github.com/fishneck/COBRA/) for data, pre-trained models, code, and instructions on how to use the code.
