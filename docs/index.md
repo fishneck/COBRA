@@ -57,11 +57,16 @@ We developed a medical segmentation model to predict pixel-wise tissue type on h
 
 ### Stroke Patients - Wearable sensors and Video
 
-![image](./figs/Result-Stroke-Sensor.png)
 
-![image](./figs/Result-Stroke-Video.png)
+Wearable sensors : ρ = 0.845, 95% CI [0.743,0.908]
 
-An independent assessment performed in-clinic by trained experts was shown to be strongly correlated with the COBRA score for two different data modalities:  wearable sensors (ρ = 0.845, 95% CI [0.743,0.908]) and video (ρ = 0.746, 95% C.I [0.594, 0.847])
+<img src="./figs/Result-Stroke-Sensor.png" data-canonical-src="./figs/Result-Stroke-Sensor.png" width="300" height="300" />
+
+Video : ρ = 0.746, 95% C.I [0.594, 0.847]
+
+<img src="./figs/Result-Stroke-Video.png" data-canonical-src="./figs/Result-Stroke-Video.png" width="300" height="300" />
+
+An independent assessment performed in-clinic by trained experts was shown to be strongly correlated with the COBRA score for both data modalities
 
 ### Knee Osteoarthritis 
 
