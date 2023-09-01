@@ -47,25 +47,6 @@ The table-top rehabilitation activity in the stroke impairment quantification ta
 
 The dark objects are difficult to detect, which results in a systematic loss of confidence in the video-based AI model, and hence lower COBRA scores (independently from the FMA score). The bottom middle and right scatterplots show that stratifying according to object color corrects for the confounding factor, improving the correlation coefficient.
 
-
-## AI Models for Clinically Meaningful Task
-
-### Stroke Patients - Wearable sensors
-
-
-We trained a model to identify functional primitives from healthy individuals' inertial measurement units (IMUs) data. We utilized a Multi-Stage Temporal Convolutional Network (MS-TCN). We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. Source code for model training and calculating COBRA score is in [here](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU).
-
-
-### Stroke Patients - Video
-
-
-We performed functional primitive identification from healthy individuals' video data. We utilized the X3D model, a 3D convolutional neural network designed for primitive classification from video data. We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. Source code for model training and calculating COBRA score is in [here](https://github.com/fishneck/COBRA/tree/main/models/stroke_video).
-
-### Knee Osteoarthritis 
-
-
-We developed a medical segmentation model to predict pixel-wise tissue type on healthy knees. We adopted a Multi-Planar U-Net architecture. We used the model confidence for cartilage tissues (femur cartilage, tibia cartilage) to calculate COBRA score. Source code for model training and calculating COBRA score is in [here](https://github.com/fishneck/COBRA/tree/main/examples/kneeOA).
-
 ## Results
 
 ### Stroke Patients - Wearable sensors and Video
@@ -87,6 +68,27 @@ An independent assessment performed in-clinic by trained experts was shown to be
 
 In addition, the COBRA score was applied to quantify severity of knee osteoarthritis from magneticresonance imaging scans, again achieving significant correlation with an
 independent clinical assessment (ρ = 0.658, 95% C.I [0.581,0.734]).
+
+
+## AI Models for Clinically Meaningful Task
+
+### Stroke Patients - Wearable sensors
+
+
+We trained a model to identify functional primitives from healthy individuals' inertial measurement units (IMUs) data. We utilized a Multi-Stage Temporal Convolutional Network (MS-TCN). We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. Source code for model training and calculating COBRA score is in [here](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU).
+
+
+### Stroke Patients - Video
+
+
+We performed functional primitive identification from healthy individuals' video data. We utilized the X3D model, a 3D convolutional neural network designed for primitive classification from video data. We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. Source code for model training and calculating COBRA score is in [here](https://github.com/fishneck/COBRA/tree/main/models/stroke_video).
+
+### Knee Osteoarthritis 
+
+
+We developed a medical segmentation model to predict pixel-wise tissue type on healthy knees. We adopted a Multi-Planar U-Net architecture. We used the model confidence for cartilage tissues (femur cartilage, tibia cartilage) to calculate COBRA score. Source code for model training and calculating COBRA score is in [here](https://github.com/fishneck/COBRA/tree/main/examples/kneeOA).
+
+
 
 # Code
 
