@@ -28,7 +28,7 @@ The average confidence is higher for the healthy subjects. The means of the dist
 
 The application of the COBRA score to the impairment quantification in stroke patients was carried out using the publicly available StrokeRehab dataset. StrokeRehab contains **wearable-sensor data** and **video data** from a cohort of 29 healthy individuals and 51 stroke patients performing multiple trials of 9 rehabilitation activities.
 
-![image](./figs/Data-Stroke.png)
+![image](./figs/Data-StrokeRehab.png)
 
 
 The impairment level of each patient was quantified via the Fugl-Meyer assessment (FMA). The FMA score is a number between 0 (maximum impairment) and 66 (healthy) equal to the sum of itemized scores (each from 0 to 2) for 33 upper body mobility assessments carried out in-clinic by a trained expert.
