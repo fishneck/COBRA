@@ -16,7 +16,7 @@ Automatic assessment of impairment and disease severity is a key challenge in da
 In Step 1, an AI model is trained to perform a clinically meaningful task on data from healthy individuals. For impairment quantification in stroke patients, the task is prediction of functional primitive motions from videos or wearable sensor data (top). For severity quantification of knee osteoarthritis, the task is segmentation of knee tissues from magnetic resonance imaging scans (bottom). In Step 2, the COBRA score is computed based on the confidence of the AI model when performing the task on patient data. Data from patients with higher degrees of impairment or severity differ more from the healthy population used for training, which results in decreased model confidence and hence a lower COBRA score.
 
 
-## Datasets
+## Applications
 
 ### Quantification of Impairment in Stroke Patients
 
@@ -53,7 +53,7 @@ We performed functional primitive identification from healthy individuals' video
 
 We developed a medical segmentation model to predict pixel-wise tissue type on healthy knees. We adopted a Multi-Planar U-Net architecture. We used the model confidence for cartilage tissues (femur cartilage, tibia cartilage) to calculate COBRA score. Source code for model training and calculating COBRA score is in [here](https://github.com/fishneck/COBRA/tree/main/examples/kneeOA).
 
-## Automatic assessment result
+## Results
 
 ### Stroke Patients - Wearable sensors and Video
 
