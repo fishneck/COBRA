@@ -16,6 +16,13 @@ Automatic assessment of impairment and disease severity is a key challenge in da
 In Step 1, an AI model is trained to perform a clinically meaningful task on data from healthy individuals. For impairment quantification in stroke patients, the task is prediction of functional primitive motions from videos or wearable sensor data (top). For severity quantification of knee osteoarthritis, the task is segmentation of knee tissues from magnetic resonance imaging scans (bottom). In Step 2, the COBRA score is computed based on the confidence of the AI model when performing the task on patient data. Data from patients with higher degrees of impairment or severity differ more from the healthy population used for training, which results in decreased model confidence and hence a lower COBRA score.
 
 
+## Averaging model confidence yields a discriminative characterization score
+
+![image](./figs/Mean_confidence.png)
+
+The average confidence is higher for the healthy subjects. The means of the distributions (dashed lines) are clearly separated. This motivates the definition of the COBRA score as the mean confidence averaged over multiple data points associated to the subject.
+
+
 ## Applications
 
 ### Quantification of Impairment in Stroke Patients
@@ -33,6 +40,13 @@ The application of the COBRA score to the quantification of knee osteoarthritis 
 
 Each knee is labeled with the corresponding Kellgren-Lawrence (KL) grades, retrieved from the NIH Osteoarthritis Initiative collection. The KL grade quantifies OA severity on a scale from 0 (healthy) to 4 (severe).
 
+## Confounding factors
+
+![image](./figs/Confounding_factors_object_color.png)
+
+The table-top rehabilitation activity in the stroke impairment quantification task involves dark and light-colored objects (top row). The bottom left scatterplot shows the COBRA score computed only using video data from this activity and the corresponding Fugl-Meyer assessment (FMA) score.
+
+The dark objects are difficult to detect, which results in a systematic loss of confidence in the video-based AI model, and hence lower COBRA scores (independently from the FMA score). The bottom middle and right scatterplots show that stratifying according to object color corrects for the confounding factor, improving the correlation coefficient.
 
 
 ## AI Models for Clinically Meaningful Task
