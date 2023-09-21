@@ -17,14 +17,14 @@ The impairment level of each patient was quantified via the Fugl-Meyer assessmen
 
 We trained a model to identify functional primitives from healthy individuals' inertial measurement units (IMUs) data. We utilized a Multi-Stage Temporal Convolutional Network (MS-TCN). We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. The model is trained using 5-fold cross validation on healthy subjects. Held-out helathy subjects(id=\[C0004, C0015, C0023, C0030\]) and all stroke subjects are saved for evaluating COBRA score.
 
-To access model output, download wearable sensors model output from [here](https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link). Patient's FMA score is stored in [here](https://github.com/fishneck/COBRA/tree/main/data/Stroke). After extracting files, using `tar -xzvf file.tar.gz`, use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score.
+To access model output, download wearable sensors model output from [here](https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link). Patient's FMA score is stored in [here](https://github.com/fishneck/COBRA/tree/main/data/Stroke). After downloading files, please use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score.
 
 
 #### Stroke Patients - Video
 
 We performed functional primitive identification from healthy individuals' video data. We utilized the X3D model, a 3D convolutional neural network designed for primitive classification from video data. We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. The model is trained using 4-fold cross validation on healthy subjects. Held-out helathy subjects(id=\[C0004, C0015, C0023, C0030\]) and all stroke subjects are saved for evaluating COBRA score.
 
-To access model output, download video model output from [here](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link). Patient's FMA score is stored in [here](https://github.com/fishneck/COBRA/tree/main/data/Stroke). For visual confounding factors, please use model output under `test_blur/` directory. After extracting files, using `tar -xzvf file.tar.gz`, use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score. 
+To access model output, download video model output from [here](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link). Patient's FMA score is stored in [here](https://github.com/fishneck/COBRA/tree/main/data/Stroke). For visual confounding factors, please use model output under `test_blur/` directory. After extracting files using `tar -xzvf file.tar.gz`, use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score. 
 
 
 ### Quantification of Severity of Knee Osteoarthritis
