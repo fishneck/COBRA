@@ -42,13 +42,6 @@ The application of the COBRA score to the quantification of knee osteoarthritis 
 
 Each knee is labeled with the corresponding Kellgren-Lawrence (KL) grades, retrieved from the NIH Osteoarthritis Initiative collection. The KL grade quantifies OA severity on a scale from 0 (healthy) to 4 (severe).
 
-## Confounding factors
-
-![image](./figs/Confounding_factors_object_color.png)
-
-The table-top rehabilitation activity in the stroke impairment quantification task involves dark and light-colored objects (top row). The bottom left scatterplot shows the COBRA score computed only using video data from this activity and the corresponding Fugl-Meyer assessment (FMA) score.
-
-The dark objects are difficult to detect, which results in a systematic loss of confidence in the video-based AI model, and hence lower COBRA scores (independently from the FMA score). The bottom middle and right scatterplots show that stratifying according to object color corrects for the confounding factor, improving the correlation coefficient.
 
 ## Results
 
@@ -71,6 +64,15 @@ An independent assessment performed in-clinic by trained experts was shown to be
 
 In addition, the COBRA score was applied to quantify severity of knee osteoarthritis from magneticresonance imaging scans, again achieving significant correlation with an
 independent clinical assessment (ρ = 0.658, 95% C.I [0.581,0.734]).
+
+
+## Confounding factors
+
+![image](./figs/Confounding_factors_object_color.png)
+
+The table-top rehabilitation activity in the stroke impairment quantification task involves dark and light-colored objects (top row). The bottom left scatterplot shows the COBRA score computed only using video data from this activity and the corresponding Fugl-Meyer assessment (FMA) score.
+
+The dark objects are difficult to detect, which results in a systematic loss of confidence in the video-based AI model, and hence lower COBRA scores (independently from the FMA score). The bottom middle and right scatterplots show that stratifying according to object color corrects for the confounding factor, improving the correlation coefficient.
 
 
 ## AI Models for Clinically Meaningful Task
