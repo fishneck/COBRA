@@ -11,7 +11,7 @@ For more information please visit our website https://fishneck.github.io/COBRA/
 
 For COBRA score calculation, we utilized healthy-trained action segmentation model outputs on held-out test set. 
 
-Model outputs for wearable sensor data can be downladed from [here](https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link). Model outputs for video data can be downladed from [here](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link). Stroke patients' clinical assessment scores is provided in this [repo](https://github.com/fishneck/COBRA/tree/main/data/Stroke).
+Model outputs for [wearable sensor](https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link) and [video](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link) are shared. Stroke patients' clinical assessment scores is provided in this [repo](https://github.com/fishneck/COBRA/tree/main/data/Stroke).
 
 Raw wearble sensor data and patient meta data can also be downloaded from [StrokeRehab](https://simtk.org/projects/primseq) public directory. 
 
@@ -19,16 +19,23 @@ Raw wearble sensor data and patient meta data can also be downloaded from [Strok
 
 For COBRA score calculation, we utilized healthy-trained medical imaging segmentation model outputs on held-out test set. 
 
-Segmentation model weights can be downladed from [here](https://drive.google.com/file/d/1KIppYLu1i3HN_d985rB7H8CugHy26K_o/view?usp=drive_link). Due to the large volume of data, we provide some [sample model output](https://drive.google.com/drive/folders/1KK473GI1OF2U44euHYA9fVIxsYKoTZsW?usp=drive_link) files for illustration. Raw MRI data is publicly available at OAI-ZIB [website](https://pubdata.zib.de/). Raw meta data is publicly available at NIH-OAI [database](https://nda.nih.gov/oai/). We provide a pre-processed version of patient meta data in this [repo](https://github.com/fishneck/COBRA/tree/main/data/kneeOA).
+Segmentation [model weights](https://drive.google.com/file/d/1KIppYLu1i3HN_d985rB7H8CugHy26K_o/view?usp=drive_link) and [sample model output](https://drive.google.com/drive/folders/1KK473GI1OF2U44euHYA9fVIxsYKoTZsW?usp=drive_link) are provided. Raw MRI data and raw patient meta data are publicly available at OAI-ZIB [website](https://pubdata.zib.de/) and NIH-OAI [database](https://nda.nih.gov/oai/). We provide a pre-processed version of patient meta data in this [repo](https://github.com/fishneck/COBRA/tree/main/data/kneeOA).
 
 To fully replicate the COBRA score in Knee OA replication, please follow [Multi-Planar UNet official repo](https://github.com/perslev/MultiPlanarUNet) to generate test prediction using provided model weights and model configuration file.
 
 
 ## Calculate COBRA score
 
+After getting fine-grained model outputs, please follow code snippets in `models/*/1 - Calculate_COBRA.ipynb` to calculate COBRA score. 
+
+Note: Replace `*` with `stroke_IMU` or `stroke_video` or `kneeOA` for 3 applications
 
 
-### Generate plots
+## Generate plots
+
+After getting fine-grained model outputs, please follow code snippets in `models/*/2 - Generate_plots.ipynb` to calculate COBRA score. 
+
+Note: Replace `*` with `stroke_IMU` or `stroke_video` or `kneeOA` for 3 applications
 
 
 
