@@ -18,6 +18,7 @@ Stroke patients' clinical assessment scores is provided in this [repo](https://d
 
 Directory structure 
 
+```
 root ── Stroke_IMU/
       ├─ fold1/...
       ├─ fold2/...
@@ -28,7 +29,7 @@ root ── Stroke_IMU/
       │           └─ best_loss.prm
       ├ stroke_raw.pkl
       └ healthy_raw.pkl
-
+```
 
 After downloading files, please use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score.
 
