@@ -57,8 +57,6 @@ We provide a full implementation of using COBRA to quantify impairment in stroke
 
 The application of the COBRA score to the quantification of knee osteoarthritis (OA) severity was carried out using the publicly available OAI-ZIB dataset. This dataset provides 3D MRI scans of 101 healthy right knees and 378 right knees affected by knee osteoarthritis (OA), a long-term degenerative joint condition.
 
-![image](https://github.com/fishneck/COBRA/blob/main/Data-KneeOA.png)
-
 
 Each knee is labeled with the corresponding Kellgren-Lawrence (KL) grades, retrieved from the NIH Osteoarthritis Initiative collection. The KL grade quantifies OA severity on a scale from 0 (healthy) to 4 (severe).
 
