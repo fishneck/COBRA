@@ -7,7 +7,7 @@ For more information please visit our website https://fishneck.github.io/COBRA/
 
 ## Prepare data 
 
-For full information regarding COBRA data, please visit our [data page](https://github.com/fishneck/COBRA/data).
+For full information regarding COBRA data, please visit our [data page](https://github.com/fishneck/COBRA/tree/main/data).
 
 **Stroke Impairment** 
 
