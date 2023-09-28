@@ -18,11 +18,11 @@ After getting fine-grained model outputs, please follow code snippets in `models
 
 Note: Replace `*` with `stroke_IMU` or `stroke_video` or `kneeOA` 
 
-[Stroke impairment using wearable sensors](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU/1 - Calculate_COBRA.ipynb).
+Stroke impairment using [wearable sensors](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU/).
 
-[Stroke impairment using video](https://github.com/fishneck/COBRA/tree/main/models/stroke_video/1 - Calculate_COBRA.ipynb).
+Stroke impairment using [video](https://github.com/fishneck/COBRA/tree/main/models/stroke_video/).
 
-[Knee OA Severity using MRI scans](https://github.com/fishneck/COBRA/tree/main/models/kneeOA/1 - Calculate_COBRA.ipynb).
+Knee OA Severity using [MRI scans](https://github.com/fishneck/COBRA/tree/main/models/kneeOA/).
 
 
 
