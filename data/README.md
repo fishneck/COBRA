@@ -6,11 +6,11 @@ For more information please visit our website https://fishneck.github.io/COBRA/
 
 
 
-## Clinical Applications
+# Clinical Applications
 
 We provide healthy trained model outputs and model weights. Raw data and model training instructions are also be included. 
 
-### Stroke Impairment - Wearable sensors 
+## Stroke Impairment - Wearable sensors 
 
 Model outputs for wearable sensor are shared via Google Drive([link](https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link)). 
 
@@ -40,7 +40,7 @@ Raw wearble sensor data and patient meta data can also be accessed from [StrokeR
 To train a model from scratch on healthy individuals' inertial measurement units (IMUs) data, please follow instructions in [ASRF](https://github.com/yiskw713/asrf). 
 
 
-### Stroke Patients - Video
+## Stroke Patients - Video
 
 Model outputs for videos are shared via Google Drive([link]([https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link))). 
 
@@ -67,7 +67,7 @@ Please use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/mode
 To train a model from scratch on healthy individuals' video data, please follow instructions in [SlowFast](https://github.com/facebookresearch/SlowFast). 
 
 
-### Knee Osteoarthritis - MRI
+## Knee Osteoarthritis - MRI
 
 We provide 5 sample model outputs via Google Drive [link](https://drive.google.com/drive/folders/1KK473GI1OF2U44euHYA9fVIxsYKoTZsW?usp=drive_link). You can use segmentation model weights in [here](https://drive.google.com/drive/folders/1cBWEblKSqg1uN88ZRWC7ikKmOLTYa-HC?usp=drive_link) to generate all predictions after downloading raw imaging data from [OAI-ZIB](https://pubdata.zib.de/).
 
