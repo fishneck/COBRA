@@ -31,14 +31,14 @@ To fully replicate the COBRA score in Knee OA replication, please follow [Multi-
 
 After getting fine-grained model outputs, please follow code snippets in `models/*/1 - Calculate_COBRA.ipynb` to calculate COBRA score. 
 
-Note: Replace `*` with `stroke_IMU` or `stroke_video` or `kneeOA` for 3 applications
+Note: Replace `*` with `stroke_IMU` or `stroke_video` or `kneeOA` 
 
 
 ## Generate plots
 
 After getting fine-grained model outputs, please follow code snippets in `models/*/2 - Generate_plots.ipynb` to calculate COBRA score. 
 
-Note: Replace `*` with `stroke_IMU` or `stroke_video` or `kneeOA` for 3 applications
+Note: Replace `*` with `stroke_IMU` or `stroke_video` or `kneeOA` 
 
 
 
