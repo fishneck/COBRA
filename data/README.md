@@ -18,7 +18,7 @@ Stroke patients' clinical assessment scores is provided in this [repo](https://d
 
 Directory structure 
 
-```
+```tree
 root ── Stroke_IMU/
       ├─ fold1/...
       ├─ fold2/...
