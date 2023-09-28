@@ -16,7 +16,7 @@ Model outputs for wearable sensor are shared via Google Drive([link](https://dri
 
 Stroke patients' clinical assessment scores is provided in this [repo](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link).
 
-Directory structure 
+After downloading files, there should be a directory structure like this
 
 ```tree
 root ── Stroke_IMU/
@@ -31,34 +31,68 @@ root ── Stroke_IMU/
       └ healthy_raw.pkl
 ```
 
-After downloading files, please use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score.
+Each `fold*/` contains prediction for 1) held-out healthy subjects 2) stroke subjects and 3) model weights for that fold. Two `.pkl` files contains processed output for calculating COBRA.
 
-Raw wearble sensor data and patient meta data can also be downloaded from [StrokeRehab](https://simtk.org/projects/primseq) public directory.
+Please use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score.
 
-To train a model to identify functional primitives from healthy individuals' inertial measurement units (IMUs) data, we utilized a Multi-Stage Temporal Convolutional Network (MS-TCN)[code](https://github.com/yiskw713/asrf). We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. The model is trained using 5-fold cross validation on healthy subjects. Held-out healthy subjects(id=\[C0004, C0015, C0023, C0030\]) and all stroke subjects are saved for evaluating COBRA score.
+Raw wearble sensor data and patient meta data can also be accessed from [StrokeRehab](https://simtk.org/projects/primseq) public directory.
+
+To train a model from scratch on healthy individuals' inertial measurement units (IMUs) data, please follow instructions in [ASRF](https://github.com/yiskw713/asrf). 
 
 
 ### Stroke Patients - Video
 
-We performed functional primitive identification from healthy individuals' video data. We utilized the X3D model, a 3D convolutional neural network designed for primitive classification from video data. We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. The model is trained using 4-fold cross validation on healthy subjects. Held-out helathy subjects(id=\[C0004, C0015, C0023, C0030\]) and all stroke subjects are saved for evaluating COBRA score.
+Model outputs for videos are shared via Google Drive([link]([https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link))). 
 
-To access model output, download video model output from [here](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link). Patient's FMA score is stored in [here](https://github.com/fishneck/COBRA/tree/main/data/Stroke). For visual confounding factors, please use model output under `test_blur/` directory. After extracting files using `tar -xzvf file.tar.gz`, use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score. 
+Stroke patients' clinical assessment scores is provided in this [repo](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link).
+
+After downloading files, there should be a directory structure like this
+
+```tree
+root ── Stroke_video/
+      ├─ fold1/...
+      ├─ fold2/...
+      ├─ fold3/...
+      └─ fold4/ ──── test.tar.gz
+                  ├─ test_stroke.tar.gz
+                  └─ test_blurred/ ──── test_blurred_healthy.tar.gz
+                                     └─ test_blurred_stroke.tar.gz
+      
+```
+
+Each `fold*/` contains predictions for 1) held-out healthy subjects 2) stroke subjects 3) held-out healthy subjects' blurred clips and 4) stroke subjects' blurred clips for that fold. Feel free to use `tar -xzvf file.tar.gz` to extract model outputs.
+
+Please use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_video) for generating COBRA score.
+
+To train a model from scratch on healthy individuals' video data, please follow instructions in [SlowFast](https://github.com/facebookresearch/SlowFast). 
 
 
-### Quantification of Severity of Knee Osteoarthritis
+### Knee Osteoarthritis - MRI
 
-The application of the COBRA score to the quantification of knee osteoarthritis (OA) severity was carried out using the publicly available OAI-ZIB dataset. This dataset provides 3D MRI scans of 101 healthy right knees and 378 right knees affected by knee osteoarthritis (OA), a long-term degenerative joint condition.
+We provide 5 sample model outputs via Google Drive [link](https://drive.google.com/drive/folders/1KK473GI1OF2U44euHYA9fVIxsYKoTZsW?usp=drive_link). You can use segmentation model weights in [here](https://drive.google.com/drive/folders/1cBWEblKSqg1uN88ZRWC7ikKmOLTYa-HC?usp=drive_link) to generate all predictions after downloading raw imaging data from [OAI-ZIB](https://pubdata.zib.de/).
 
-![image](https://github.com/fishneck/COBRA/blob/main/Data-KneeOA.png)
+For the ease of implementation, please organize the files like this
+
+```tree
+root ── OAI_ZIB/
+      ├─ train/...
+      ├─ val/...
+      └─ test/ ──── images/ ──── xxxxxx.nii
+                  │           ├─ xxxxxx.nii
+                  │           ├─ xxxxxx.nii
+                  │           └─ ...
+                  └─ labels/ ──── xxxxxx.nii
+                              ├─ xxxxxx.nii
+                              ├─ xxxxxx.nii
+                              └─ ...
+```
+
+Knee Osteoarthritis patients' clinical assessment scores is provided in this [repo](https://github.com/fishneck/COBRA/tree/main/data/kneeOA). We only include 479 scans with valid clinical assessment scores from the entire 507 scans in OAI-ZIB.
 
 
-Each knee is labeled with the corresponding Kellgren-Lawrence (KL) grades, retrieved from the NIH Osteoarthritis Initiative collection. The KL grade quantifies OA severity on a scale from 0 (healthy) to 4 (severe).
-
-We developed a medical segmentation model to predict pixel-wise tissue type on healthy knees. We adopted a Multi-Planar U-Net architecture. We used the model confidence for cartilage tissues (femur cartilage, tibia cartilage) to calculate COBRA score. 
 
 
-We provide sample segmentation outputs in [here](https://drive.google.com/drive/folders/1KK473GI1OF2U44euHYA9fVIxsYKoTZsW?usp=drive_link) and segmentation model weights in [here](https://drive.google.com/drive/folders/1cBWEblKSqg1uN88ZRWC7ikKmOLTYa-HC?usp=drive_link). Feel free to follow [Multi-Planar-Unet](https://github.com/perslev/MultiPlanarUNet) instructions and use model weights to generate all outputs. Patient's KL grade and train-validation-test split is stored in [here](https://github.com/fishneck/COBRA/tree/main/data/kneeOA).
 
-Codes for generating COBRA score is in [here](https://github.com/fishneck/COBRA/tree/main/models/kneeOA).
+To train a model from scratch on healthy individuals' video data, please follow instructions in [Multi-Planar-Unet](https://github.com/perslev/MultiPlanarUNet).
 
 
