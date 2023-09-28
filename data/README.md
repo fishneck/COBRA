@@ -1,26 +1,43 @@
 # Data for COBRA
 
-This direcotory contains source data from Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects by Boyang Yu*, Aakash Kaku*, Kangning Liu*, Avinash Parnandi, Emily Fokas, Anita Venkatesan, Natasha Pandit, Rajesh Ranganath, Heidi Schambra and Carlos Fernandez-Granda [* - Equal Contribution].
+This direcotory contains data preparation instructions from Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects by Boyang Yu*, Aakash Kaku*, Kangning Liu*, Avinash Parnandi, Emily Fokas, Anita Venkatesan, Natasha Pandit, Rajesh Ranganath, Heidi Schambra and Carlos Fernandez-Granda [* - Equal Contribution]. 
 
-We provide model output for each clinical application and postprocessing pipelines for COBRA scores and analysis. For more information please visit our website https://fishneck.github.io/COBRA/
-
-## Application
-
-### Quantification of Impairment in Stroke Patients
-
-The application of the COBRA score to the impairment quantification in stroke patients was carried out using the publicly available StrokeRehab dataset. StrokeRehab contains wearable-sensor data and video from a cohort of 29 healthy individuals and 51 stroke patients performing multiple trials of 9 rehabilitation activities.
-
-The impairment level of each patient was quantified via the Fugl-Meyer assessment (FMA). The FMA score is a number between 0 (maximum impairment) and 66 (healthy) equal to the sum of itemized scores (each from 0 to 2) for 33 upper body mobility assessments carried out in-clinic by a trained expert.
+For more information please visit our website https://fishneck.github.io/COBRA/
 
 
-#### Stroke Patients - Wearable sensors
 
-We trained a model to identify functional primitives from healthy individuals' inertial measurement units (IMUs) data. We utilized a Multi-Stage Temporal Convolutional Network (MS-TCN). We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. The model is trained using 5-fold cross validation on healthy subjects. Held-out helathy subjects(id=\[C0004, C0015, C0023, C0030\]) and all stroke subjects are saved for evaluating COBRA score.
+## Clinical Applications
 
-To access model output, download wearable sensors model output from [here](https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link). Patient's FMA score is stored in [here](https://github.com/fishneck/COBRA/tree/main/data/Stroke). After downloading files, please use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score.
+We provide healthy trained model outputs and model weights. Raw data and model training instructions are also be included. 
+
+### Stroke Impairment - Wearable sensors 
+
+Model outputs for wearable sensor are shared via Google Drive([link](https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link)). 
+
+Stroke patients' clinical assessment scores is provided in this [repo](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link).
+
+Directory structure 
+
+root ── Stroke_IMU/
+      ├─ fold1/...
+      ├─ fold2/...
+      ├─ fold3/...
+      ├─ fold4/...
+      ├─ fold5/ ───  predictions_loss_model.p
+      │           ├─ predictions_loss_model.stroke.p
+      │           └─ best_loss.prm
+      ├ stroke_raw.pkl
+      └ healthy_raw.pkl
 
 
-#### Stroke Patients - Video
+After downloading files, please use codes in this [repo](https://github.com/fishneck/COBRA/tree/main/models/stroke_IMU) for generating COBRA score.
+
+Raw wearble sensor data and patient meta data can also be downloaded from [StrokeRehab](https://simtk.org/projects/primseq) public directory.
+
+To train a model to identify functional primitives from healthy individuals' inertial measurement units (IMUs) data, we utilized a Multi-Stage Temporal Convolutional Network (MS-TCN)[code](https://github.com/yiskw713/asrf). We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. The model is trained using 5-fold cross validation on healthy subjects. Held-out healthy subjects(id=\[C0004, C0015, C0023, C0030\]) and all stroke subjects are saved for evaluating COBRA score.
+
+
+### Stroke Patients - Video
 
 We performed functional primitive identification from healthy individuals' video data. We utilized the X3D model, a 3D convolutional neural network designed for primitive classification from video data. We used the model confidence for motion related primitives (transport, reposition, reach) to calculate COBRA score. The model is trained using 4-fold cross validation on healthy subjects. Held-out helathy subjects(id=\[C0004, C0015, C0023, C0030\]) and all stroke subjects are saved for evaluating COBRA score.
 
