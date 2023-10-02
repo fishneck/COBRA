@@ -96,6 +96,11 @@ We performed functional primitive identification from healthy individuals' video
 
 We developed a medical segmentation model to predict pixel-wise tissue type on healthy knees. We adopted a Multi-Planar U-Net architecture. We used the model confidence for cartilage tissues (femur cartilage, tibia cartilage) to calculate COBRA score. Source code for model training and calculating COBRA score is in [here](https://github.com/fishneck/COBRA/tree/main/examples/kneeOA).
 
+### Miscellaneous
+
+Cobra icon adopted from internet icon [resource](https://www.freepik.com/icon/cobra_5091130).
+
+
 
 
 # Code
