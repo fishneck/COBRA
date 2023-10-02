@@ -5,7 +5,7 @@ For more information please visit [our GitHub page](https://github.com/fishneck/
 
 Automatic assessment of impairment and disease severity is a key challenge in data-driven medicine. We propose a novel framework, **COnfidence-Based chaRacterization of Anomalies (COBRA)**, to address this challenge, which leverages AI models trained exclusively on healthy subjects. The models are designed to predict a clinically-meaningful attribute of the healthy patients. When presented with data where the attribute is affected by the medical condition of interest, the models experience a decrease in confidence that can be used to quantify deviation from the healthy population. COBRA was applied to quantification of upper-body motion impairment in stroke patients, and severity of knee osteoarthritis from magneticresonance imaging scans.
 
-<img src="https://github.com/fishneck/COBRA/assets/39758479/b9595d40-85f2-4ebd-83dc-005e1ede4c9a"  width="60" height="60" />
+<img src="https://github.com/fishneck/COBRA/assets/39758479/b9595d40-85f2-4ebd-83dc-005e1ede4c9a"  width="90" height="90" />
 
 
 
