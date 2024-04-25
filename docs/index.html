@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>COnfidence-Based chaRacterization of Anomalies (COBRA)</title>
+		<title>COBRA</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +22,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"> COnfidence-Based chaRacterization of Anomalies (<strong>COBRA</strong>)</a>
+									<a href="index.html" class="logo"> Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects</a>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
@@ -33,9 +33,8 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1>Quantifying Impairment and Disease Severity <br />
-											Using AI Models Trained on Healthy Subjects</h1>
-											<p>Boyang Yu, Aakash Kaku, Kangning Liu, Avinash Parnandi, Emily Fokas, Anita Venkatesan, Natasha Pandit, Rajesh Ranganath, Heidi Schambra and Carlos Fernandez-Granda</p>
+											<h1>COnfidence-Based chaRacterization of Anomalies (<strong>COBRA</strong>)</h1>
+											<p>Joint work by Boyang Yu, Aakash Kaku, Kangning Liu, Avinash Parnandi, Emily Fokas, Anita Venkatesan, Natasha Pandit, Rajesh Ranganath, Heidi Schambra and Carlos Fernandez-Granda</p>
 										</header>
 										<p>Automatic assessment of impairment and disease severity is a key challenge in data-driven medicine. We propose a novel framework, COnfidence-Based chaRacterization of Anomalies (COBRA), to address this challenge, which leverages AI models trained exclusively on healthy subjects. The models are designed to predict a clinically-meaningful attribute of the healthy patients. When presented with data where the attribute is affected by the medical condition of interest, the models experience a decrease in confidence that can be used to quantify deviation from the healthy population. COBRA was applied to quantification of upper-body motion impairment in stroke patients, and severity of knee osteoarthritis from magneticresonance imaging scans.</p>
 										<ul class="actions">
@@ -54,7 +53,7 @@
 									</header>
 									<div class="features">
 										<article>
-											<span class="icon fa-user-plus"></span>
+											<span class="icon fa-user"></span>
 											<div class="content">
 												<h3>Stroke Impairment</h3>
 												<p>The quantification of impairment in stroke patients was carried out using the publicly available StrokeRehab dataset. StrokeRehab contains wearable-sensor data and video data from a cohort of 29 healthy individuals and 51 stroke patients performing multiple trials of 9 rehabilitation activities.</p>
@@ -73,11 +72,10 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Results</h2>
+										<h2>Details</h2>
 									</header>
 									<div class="posts">
 										<article>
-											<a href="#" class="image"><img src="images/Data-StrokeRehab.jpg" alt="" /></a>
 											<h3>Stroke - StrokeRehab data</h3>
 											<p>StrokeRehab contains wearable-sensor data and video data from a cohort of 29 healthy individuals and 51 stroke patients performing multiple trials of 9 rehabilitation activities. The impairment level of each patient was quantified via the Fugl-Meyer assessment (FMA). The FMA score is a number between 0 (maximum impairment) and 66 (healthy) equal to the sum of itemized scores (each from 0 to 2) for 33 upper body mobility assessments carried out in-clinic by a trained expert.</p>
 											<ul class="actions">
@@ -85,7 +83,6 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/Data-KneeOA.jpg" alt="" /></a>
 											<h3>Knee OA - OAI-ZIB data</h3>
 											<p>OAI-ZIB provides 3D MRI scans of 101 healthy right knees and 378 right knees affected by knee osteoarthritis (OA), a long-term degenerative joint condition. Each knee is labeled with the corresponding Kellgren-Lawrence (KL) grades, retrieved from the NIH Osteoarthritis Initiative collection. The KL grade quantifies OA severity on a scale from 0 (healthy) to 4 (severe).</p>
 											<ul class="actions">
@@ -101,17 +98,9 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/Result-Stroke-Sensor.png" alt="" /></a>
+											<a href="#" class="image"><img src="images/Result-Stroke-Sensor-Video.png" alt="" /></a>
 											<h3>High correlation with Stroke clinical assessments</h3>
-											<p>An independent assessment performed in-clinic by trained experts was shown to be strongly correlated with the COBRA score for wearable sensor data (ρ = 0.845, 95% CI [0.743,0.908]) </p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/Result-Stroke-Video.png" alt="" /></a>
-											<h3>High correlation with Stroke clinical assessments</h3>
-											<p>An independent assessment performed in-clinic by trained experts was shown to be strongly correlated with the COBRA score for video data (ρ = 0.746, 95% C.I [0.594, 0.847])</p>
+											<p>An independent assessment performed in-clinic by trained experts was shown to be strongly correlated with the COBRA score for wearable sensor data (ρ = 0.845, 95% CI [0.743,0.908]) and for video data (ρ = 0.746, 95% C.I [0.594, 0.847]). </p>
 											<ul class="actions">
 												<li><a href="#" class="button">More</a></li>
 											</ul>
@@ -172,29 +161,22 @@
 												<li><a href="#">Knee OA MRI</a></li>
 											</ul>
 										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
 									</ul>
 								</nav>
 
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Ante interdum</h2>
+										<h2>Medical data</h2>
 									</header>
 									<div class="mini-posts">
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											<a href="#" class="image"><img src="images/Data-StrokeRehab.png" alt="" /></a>
+											<p>StrokeRehab contains wearable-sensor data and video data collected during rehabilitation activities </p>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											<a href="#" class="image"><img src="images/Data-KneeOA.png" alt="" /></a>
+											<p>OAI-ZIB contains knee MRI scans for healthy and knees affected by knee osteoarthritis (OA) </p>
 										</article>
 									</div>
 									<ul class="actions">
@@ -205,12 +187,12 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Related Publication</h2>
+										<h2>Publication</h2>
 									</header>
 									<p>Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects</p>
 									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">boy.yu@nyu.edu</a></li>
-										<li class="icon solid bookmark-o"> Boyang Yu, Aakash Kaku, Kangning Liu*, Avinash Parnandi, Emily Fokas, Anita Venkatesan, Natasha Pandit, Rajesh Ranganath, Heidi Schambra and Carlos Fernandez-Granda</li>
+										<li class="icon solid fa-users"><a href="#">boy.yu@nyu.edu</a></li>
+										<li class="icon solid bookmark-o"> Boyang Yu, Aakash Kaku, Kangning Liu, Avinash Parnandi, Emily Fokas, Anita Venkatesan, Natasha Pandit, Rajesh Ranganath, Heidi Schambra and Carlos Fernandez-Granda</li>
 									</ul>
 								</section>
 
