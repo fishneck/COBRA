@@ -42,7 +42,7 @@ To train a model from scratch on healthy individuals' inertial measurement units
 
 ## Stroke Patients - Video
 
-Model outputs for videos are shared via Google Drive([link]([https://drive.google.com/drive/folders/1YBgIZJhYRgd7IiChn7yWOsT6HCIKYPhl?usp=drive_link](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link))). 
+Model outputs for videos are shared via Google Drive([link](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=share_link). 
 
 Stroke patients' clinical assessment scores is provided in this [repo](https://drive.google.com/drive/folders/1tbpq0z6C5aGIdJRrIuF_jAAoN8SWc3KZ?usp=drive_link).
 
