@@ -1,6 +1,6 @@
 # Data for COBRA
 
-This direcotory contains data preparation instructions from Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects by Boyang Yu*, Aakash Kaku*, Kangning Liu*, Avinash Parnandi, Emily Fokas, Anita Venkatesan, Natasha Pandit, Rajesh Ranganath, Heidi Schambra and Carlos Fernandez-Granda [* - Equal Contribution]. 
+This direcotory contains data preparation instructions from Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects by Boyang Yu, Aakash Kaku, Kangning Liu, Avinash Parnandi, Emily Fokas, Anita Venkatesan, Natasha Pandit, Rajesh Ranganath, Heidi Schambra and Carlos Fernandez-Granda. 
 
 For more information please visit our website https://fishneck.github.io/COBRA/
 
