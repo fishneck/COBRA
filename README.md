@@ -1,9 +1,26 @@
 
-This is the github repo for the paper *Quantifying Impairment and Disease Severity Using AI Models Trained on Healthy Subjects* by Boyang Yu, Aakash Kaku, Kangning Liu, Avinash Parnandi, Emily Fokas, Anita Venkatesan, Natasha Pandit, Rajesh Ranganath, Heidi Schambra and Carlos Fernandez-Granda.
+# COBRA: Confidence-based Anomaly Detection for Medicine
+
+
+This website provides materials relevant to the paper:
+
+Yu, B., Kaku, A., Liu, K., Parnandi, A., Fokas, E., Venkatesan, A., Pandit, N., Ranganath, R., Schambra, H. and Fernandez-Granda, C., Quantifying impairment and disease severity using AI models trained on healthy subjects. npj Digit. Med. 7, 180 (2024). 
+
+DOI: https://doi.org/10.1038/s41746-024-01173-x
 
 For more information please visit our website https://fishneck.github.io/COBRA/
 
 # Overview
+
+
+The paper presents a method to perform automatic assessment of impairment and disease severity using AI models trained only on healthy individuals. The COnfidence-Based chaRacterization of Anomalies (COBRA) score exploits the decrease in confidence of these models when processing data from impaired or diseased patients to quantify their deviation from the healthy population. This diagram explains how the method quantifies impairment in stroke patients (top) and disease severity of knee osteoarthritis:
+
+![plot](https://github.com/fishneck/COBRA/blob/main/COBRA-Overview-Stroke.png)
+
+![plot](https://github.com/fishneck/COBRA/blob/main/COBRA-Overview-KneeOA.png)
+
+The plots below compare the COBRA score against expert-based metrics: (1) Fugl-Meyer assessment (FMA) score for impairment quantification in stroke patients, (2) Kellgren-Lawrence (KL) grade for knee impairment. The COBRA score computed automatically in under a minute is strongly correlated with the expert-based metrics.
+
 
 ## Prepare data 
 
