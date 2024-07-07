@@ -21,6 +21,11 @@ The paper presents a method to perform automatic assessment of impairment and di
 
 The plots below compare the COBRA score against expert-based metrics: (1) Fugl-Meyer assessment (FMA) score for impairment quantification in stroke patients, (2) Kellgren-Lawrence (KL) grade for knee impairment. The COBRA score computed automatically in under a minute is strongly correlated with the expert-based metrics.
 
+![plot](https://github.com/fishneck/COBRA/blob/main/Results_stroke_kneeOA.png)
+
+
+# Implementation
+
 
 ## Prepare data 
 
